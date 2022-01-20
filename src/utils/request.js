@@ -4,7 +4,7 @@
 import axios from "axios";
 
 let token = localStorage.getItem("token");
-token = "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZXhwbG9yZXJhZG1pbiIsIm5ldHdvcmsiOiJvcmcxLW5ldHdvcmsiLCJpYXQiOjE2NDI0MTYyNjYsImV4cCI6MTY0MjQyMzQ2Nn0.g6sl67OQ7elkyn3DONhQHWw81bwIbDGfNAF_pnogmDw";
+token = "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZXhwbG9yZXJhZG1pbiIsIm5ldHdvcmsiOiJvcmcxLW5ldHdvcmsiLCJpYXQiOjE2NDI2Njc0MjQsImV4cCI6MTY0MjY3NDYyNH0.nubyw-5iMnGowgbUa0OnMljJgaXJw6QDbqf1wX14yYo";
 
 
 axios.defaults.timeout = 100000;

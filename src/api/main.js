@@ -11,7 +11,6 @@ export function getBlocksByHour() {
     return request("GET", `/api/blocksByHour/${channelId}/1`, {}).then(res => res);
 }
 
-
 export function getChaincode() {
     const channelId = JSON.parse(localStorage.getItem("channel")).channel_genesis_hash;
     return request("GET", `/api/chaincode/${channelId}`, {}).then(res => res);
@@ -44,5 +43,10 @@ export function getTxByHour() {
 export function getTxDetail(txId) {
     const channelId = JSON.parse(localStorage.getItem("channel")).channel_genesis_hash;
     return request("GET", `/api/transaction/${channelId}/${txId}`, {}).then(res => res);
+}
+
+export function getBlockActivity() {
+    const channelId = JSON.parse(localStorage.getItem("channel")).channel_genesis_hash;
+    return request("GET", `/api/blockActivity/${channelId}`, {}).then(res => res);
 }
 
